@@ -1,0 +1,23 @@
+<div class="container-fluid text-center text-md-left">
+	<div class="row">
+		<div class="col-md-6 mt-md-0 mt-3 footer_col1">
+			<img src="{{ Image(options.logo).src }}" class="img-fluid">
+			<p class="text-uppercase">{{ options.address_1 }}<br>{{ options.address_2 }}<br>{{ options.address_3 }}</p>
+		</div>
+		<hr class="clearfix w-100 d-md-none pb-3 ">
+
+		<div class="col-md-6 mb-md-0 mb-3 footer_col2">
+			<h3 class="text-uppercase">{{ options.txt_reseaux }}</h3>
+			<ul class="list-unstyled">
+				<li>
+				    <a href="#"><img src="{{ Image(options.img_reseau_1).src }}" alt="{{ Image(options.img_reseau_1).alt }}" width="46" class="img-fluid"></a>
+				</li>
+				<li>
+				    <a href="#"><img src="{{ Image(options.img_reseau_2).src }}" alt="{{ Image(options.img_reseau_2).alt }}" width="33" class="img-fluid"></a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer-copyright col-md-12 text-right py-2">
+			{{ options.mentions_legales }} <sup>©</sup> {{"now"|date('Y')}}
+		</div>

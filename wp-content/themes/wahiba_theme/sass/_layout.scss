@@ -1,0 +1,29 @@
+// File: layout.scss
+
+body, body * {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.ie-stickyFooter {
+	display:-ms-flexbox;
+	-ms-flex-direction:column;
+}
+
+#page {
+	width:100%;
+	min-height:100vh;
+	display:-webkit-flex;
+	display:flex;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+}
+
+.row {
+	-webkit-flex-grow:1;
+	flex-grow:1;
+}
+
+.container {
+	box-shadow: 1px 1px 15px grey;
+	background-color: #333333;
+}
